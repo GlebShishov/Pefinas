@@ -18,102 +18,145 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="css/adaptive.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="wrapper container">
-<header> </header>
+<body class="wrapper">
+<header>
+asdsasd</header>
 <section class="hero">
   <div class="hero-info">
-    <h1>Pefinas - твой бот финасист</h1>
+    <span id="hero-headline">Pefinas - твой бот финасист</span>
     <P>Разберитесь с счетами и расходами в телеграмме</P>
     <a href="" class="button primary">начать чат</a>
   </div>
 </section>
-<section id="blocks" class="section-gap">
-  <h2>Что умеет Perfenas?</h2>
-  <div class="block-container">
-    <div class="block anal">
-      <div class="block-info">
-        <h3>Анализ</h3>
-        <p>Любые покупки или переводы</p>
-      </div>
-      <div class="block-chat">
-        <p class="chat-m chat-user">Куда ушли все мои деньги?</p>
-        <div class="r-gap">
-          <img src="img/Avatar.svg" class="small-avatar">
-          <p class="chat-m chat-bot">Вы больше всего потратили в этом месяце на рестораны и такси.
-            Вот аналитика по. вашим расходам,
+<div class="container">
+  <section id="blocks" class="section-gap">
+    <span id="whatdo">Что умеет Perfenas?</span>
+    <div class="block-container">
+      <div class="block anal">
+        <div class="block-info">
+          <h3>Анализ</h3>
+          <p>Любые покупки или переводы</p>
+        </div>
+        <div class="block-chat">
+          <p class="chat-m chat-user">Куда ушли все мои деньги?</p>
+          <div class="r-gap">
+            <img src="img/Avatar.svg" class="small-avatar">
+            <p class="chat-m chat-bot">Вы больше всего потратили в этом месяце на рестораны и такси.
+              Вот аналитика по. вашим расходам,
 
-            Рестораны 15868 руб 58%
-            такси 5000 руб 58%
-            Продукты 4030 руб 58%
-            Косметика 2580 руб 58%</p>
+              Рестораны 15868 руб 58%
+              такси 5000 руб 58%
+              Продукты 4030 руб 58%
+              Косметика 2580 руб 58%</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="block nemory">
+        <div class="block-info">
+          <h3>Нечеловеческая память</h3>
+          <p>Теперь вы не забудете</p>
+        </div>
+        <div class="block-chat">
+          <p class="chat-m chat-user">Сколько саня мне должен?</p>
+          <div class="r-gap">
+            <img src="img/Avatar.svg" class="small-avatar">
+            <p class="chat-m chat-bot">Вы одолжили Саше 100 руб. Саша вам должен 1590 руб.Напишите ему и напомните о его долге</p>
+          </div>
         </div>
       </div>
+      <div class="block list">
+        <div class="block-info">
+          <h3>Все учту</h3>
+          <p>Любые покупки или переводы</p>
+        </div>
+        <div class="block-chat">
+          <p class="chat-m chat-user">Я купил стол за 30000руб</p>
+          <div class="r-gap">
+            <img src="img/Avatar.svg" class="small-avatar">
+            <p class="chat-m chat-bot">Я записал , покупка стола за 30 000 руб, на рублевый счет сбербанк</p>
+          </div>
+        </div>
 
+      </div>
+      <div class="block voice">
+        <div class="block-info">
+          <h3>Можно голосом</h3>
+          <p>Записывайте голосовые сообщения бот вас поймет</p>
+        </div>
+        <div class="block-chat">
+          <p class="chat-m chat-user">IiIiIIIiiIIiIiiIiiIiIiiiiii</p>
+          <div class="r-gap">
+            <img src="img/Avatar.svg" class="small-avatar">
+            <p class="chat-m chat-bot">Хорошо, я добавил новый счет в долларрах. На счету 100$ USD.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="block nemory">
-      <div class="block-info">
-        <h3>Нечеловеческая память</h3>
-        <p>Теперь вы не забудете</p>
-      </div>
-      <div class="block-chat">
-        <p class="chat-m chat-user">Сколько саня мне должен?</p>
-        <div class="r-gap">
-          <img src="img/Avatar.svg" class="small-avatar">
-          <p class="chat-m chat-bot">Вы одолжили Саше 100 руб. Саша вам должен 1590 руб.Напишите ему и напомните о его долге</p>
-        </div>
-      </div>
+  </section>
+  <section id="gpt" class="gpt-block">
+    <div class="top-gap half-size">
+      <h3>ChatGPT 4</h3>
+      <p>В основе бота используется актуальная версия chatgpt 4 он дает разврнутые и правильные ответы.</p>
     </div>
-    <div class="block list">
-      <div class="block-info">
-        <h3>Все учту</h3>
-        <p>Любые покупки или переводы</p>
-      </div>
-      <div class="block-chat">
-        <p class="chat-m chat-user">Я купил стол за 30000руб</p>
-        <div class="r-gap">
-          <img src="img/Avatar.svg" class="small-avatar">
-          <p class="chat-m chat-bot">Я записал , покупка стола за 30 000 руб, на рублевый счет сбербанк</p>
-        </div>
-      </div>
-
+    <img src="img/gpt.jpeg" class="gpt-img">
+  </section>
+  <section id="faq" class="faq-block">
+    <div class="top-gap half-size">
+      <h3>FAQ</h3>
+      <p>Если у вас остались вопросы вы всегда можете обратится в поддержку</p>
+      <a href="" class="button primary">Чат с поддержкой</a>
     </div>
-    <div class="block voice">
-      <div class="block-info">
-        <h3>Можно голосом</h3>
-        <p>Записывайте голосовые сообщения бот вас поймет</p>
+    <div class="faq-container half-size">
+      <details>
+        <summary>Как начать пользоваться?</summary>
+        <p>1 - Приобретаете услугу через менеджера</p>
+        <p>2 - Мы создаём опрос для вас и даём ссылку, и доступ к аналитике</p>
+        <p>3 - Вы просто рассылаете ссылку по вашей аудитории</p>
+      </details>
+      <details>
+        <summary>Кто отвечает на тесты?</summary>
+        <p>Ваша аудитория при размещении ссылки в социальных сетях или в рекламных материалах.</p>
+      </details>
+      <details>
+        <summary>Сколько стоит и как оплатить?</summary>
+        <p>Стоимость указана на услуге</p>
+        <p>Менеджер с вами свяжется и подготовит все документы.</p>
+        <p>По услугам рекламы связываетесь отдельно.</p>
+      </details>
+      <details>
+        <summary>Когда я получу результат?</summary>
+        <p>Получить результат можно уже сразу, все результаты отображаются в аналитике</p>
+        <p>Вы сами регулируете время отображения опроса. (рекомендуем от 3 дней до 1 недели)</p>
+      </details>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-container">
+      <div class="footer-block support">
+        <p>Помогите развиваться проекту</p>
+        <a href="" class="button primary">Поддержать</a>
       </div>
-      <div class="block-chat">
-        <p class="chat-m chat-user">IiIiIIIiiIIiIiiIiiIiIiiiiii</p>
-        <div class="r-gap">
-          <img src="img/Avatar.svg" class="small-avatar">
-          <p class="chat-m chat-bot">Хорошо, я добавил новый счет в долларрах. На счету 100$ USD.</p>
-        </div>
+      <div class="footer-block">
+        <a href="https://t.me/gshishov" class="footer-button" target="_blank">Вакансии</a>
+        <a href="https://t.me/gshishov" class="footer-button" target="_blank">Поддержка</a>
+        <a href="https://t.me/gshishov" class="footer-button" target="_blank">Сайт</a>
       </div>
-
+      <div class="footer-block">
+        <a href="#" class="footer-button">Договор публичной оферты</a>
+        <a href="#" class="footer-button">Заверения и гарантии</a>
+        <a href="#" class="footer-button">Политика конфиденциальности</a>
+      </div>
     </div>
   </div>
-</section>
-<section id="gpt" class="gpt-block">
-  <div class="top-gap half-size">
-    <h3>ChatGPT 4</h3>
-    <p>В основе бота используется актуальная версия chatgpt 4 он дает разврнутые и правильные ответы.</p>
-  </div>
-  <img src="img/gpt.jpeg" class="gpt-img">
-
-</section>
-<section id="faq">
-  <h3>FAQ</h3>
-  <p>Если у вас остались вопросы вы всегда можете обратится в поддержку</p>
-  <a href="" class="button primary">Чат с поддержкой</a>
-  <div class="faq-q">
-
-  </div>
-</section>
-<footer></footer>
+</footer>
 
 <!--  &lt;!&ndash; Google Analytics: change UA-XXXXX-Y to be your site's ID. &ndash;&gt;-->
 <!--  <script>-->
