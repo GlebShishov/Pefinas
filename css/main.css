@@ -1,263 +1,207 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+*{
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+}
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: Helvetica;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+h3{
+  color: var(--text);
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 39px */
+  letter-spacing: 0.585px;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+:root{
+  --background: #15171D;
+  --text: #272323;
+  --grid-gap: 12px;
+  --block-border-radius: 2rem;
+  --container-lr-padding: 16px;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+.container{
+  /*width: 100%;*/
+  display: flex;
+  /*padding: 0px var(--container-lr-padding, 16px);*/
+  gap: 64px;
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+  width: 100%;
+  max-width: 1800px;
+  padding: clamp(8px, 2vw, 16px);
 }
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+.block{
+  border-radius: var(--block-border-radius);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+.anal{
+  border-radius: var(--H2-size, 36px);
+  background: #D7E2FF;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.hero h1{
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 99.5%; /* 45.77px */
+  letter-spacing: 0.69px;
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+  background: linear-gradient(105deg, #FFF 39.65%, #00B3FF 107.21%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button{
+  width: fit-content;
+  display: flex;
+  padding: 12px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 28px;
+  text-decoration: none;
+}
+.primary{
+  background: #5C58FF;
+  color: white;
+}
+.hero{
+  display: flex;
+  padding: 142px 0px 87px 0px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 24px var(--container-paddings--leftright, 24px);
+  flex: 1 0 0;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: 0px 0px var(--Container-gap, 64px) var(--Container-gap, 64px);
+  background: #0D0221;
+  color: #FFF;
+}
+.hero-info{
+  display: flex;
+  min-width: var(--Cards-min, 375px);
+  padding: 0px 28px;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 25px;
+  flex: 1 0 0;
+  width: 100%;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+.block-container{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: flex-start;*/
+  /*align-content: flex-start;*/
+  /*gap: 4px;*/
+  /*align-self: stretch;*/
+  /*flex-wrap: wrap;*/
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(100px, 300px));*/
+  grid-gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+.chat-m{
+  width: min-content;
+  min-width: 200px;
+  display: flex;
+  padding: var(--Border-radius-12, 12px);
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 26px;
+  font-size: 15px
+;
+}
+.chat-bot{
+  color: #FFFCFC;
+  background: #5C5C97;
+}
+.chat-user{
+  background: #EBEBFF;
+  color: #000;
+}
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
+.r-gap{
+  display: flex;
+  gap: 12px;
+}
+.top-gap{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.half-size{
+  max-width: 400px;
+}
+
+.small-avatar{
   width: auto;
+  height: 38px;
+  border-radius: 38px;
+}
+.block-chat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+}
+.nemory{
+  background: #7BF478;
+}
+.list{
+  background: #87B7FE;
+}
+.voice{
+  background: #F876EB;
+}
+.gpt-block{
+  display: flex;
+  padding: var(--Border-radius-12, 12px) 15px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 10px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: var(--container-paddings--topbot, 32px);
+  background: #94C6C5;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+.gpt-img{
+  width: auto;
+  height: 200px;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
+.section-gap{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
 }
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
