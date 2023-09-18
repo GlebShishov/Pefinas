@@ -2,6 +2,13 @@
   .block-container{
     grid-template-columns: repeat(2, 1fr);
   }
+  .hero{
+    padding:32px 32px 32px 32px;
+  }
+  .hero-info{
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 @media (min-width: 1024px) {
   .block-info{
