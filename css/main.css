@@ -125,10 +125,10 @@ section {
   -webkit-text-fill-color: transparent;
 }
 .button{
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: fit-content;
   display: flex;
-  padding: 12px 21px;
+  padding: 1.2rem 2rem;
   justify-content: center;
   align-items: center;
   gap: 8px;
