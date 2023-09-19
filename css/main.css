@@ -63,7 +63,7 @@ h3{
   --container-lr-padding: 1rem;
 
 
-  @media (prefers-color-scheme: light) {
+  @media (prefers-color-scheme: dark) {
     :root{
       --chat-user-bg: #7A47C1;
       --chat-user-text: #ffffff;
