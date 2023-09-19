@@ -341,7 +341,9 @@ summary {
   gap: 0.5rem;
   color: black;
 }
-
+details p{
+  color: #272323FF;
+}
 summary:before {
   /*top: .4em;*/
   /*left: .3em;*/
