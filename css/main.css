@@ -44,6 +44,11 @@ h3{
   /*colors*/
   --background: #15171D;
   --text: #272323;
+  --chat-user-bg: #EFFEDD;
+  --chat-user-text: #1E1E1E;
+
+  --chat-bot-bg: #FFFFFF;
+  --chat-bot-text: #020202;
 
   /*radius*/
   --border-radius-12: 12px;
@@ -60,7 +65,11 @@ h3{
 
   @media (prefers-color-scheme: light) {
     :root{
+      --chat-user-bg: #7A47C1;
+      --chat-user-text: #ffffff;
 
+      --chat-bot-bg: #222E3A;
+      --chat-bot-text: #CCCCCC;
     }
 
   }
@@ -104,10 +113,40 @@ section {
   gap: 16px;
   padding: 24px;
   justify-content: space-between;
+  min-height: 400px;
+  border: 1px rgba(255, 255, 255, 0.35) solid;
+}
+.chat-bot-answer{
+  margin-right: clamp(12px,2vw,10%);
 }
 
 .anal{
-  background: #D7E2FF;
+  background: #D7E2FF ;
+  background-image: url(../img/Sircle.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 150% 100%;
+}
+.nemory{
+  background: #7BF478;
+  background-image: url(../img/Sircle.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 150% 100%;
+}
+.list{
+  background: #F0FDDC;
+  background-image: url(../img/Sircle.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 150% 100%;
+}
+.voice{
+  background: #F876EB;
+  background-image: url(../img/Sircle.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 150% 100%;
 }
 
 .hero h1{
@@ -192,16 +231,18 @@ section {
   align-items: flex-start;
   gap: 10px;
   border-radius: 26px;
-  font-size: 15px
-;
+  font-size: 15px;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.09);
 }
 .chat-bot{
-  color: #FFFCFC;
-  background: #5C5C97;
+  background: var(--chat-bot-bg);
+  color: var(--chat-bot-text);
+  border-radius: 4px 24px 24px 24px;
 }
 .chat-user{
-  background: #EBEBFF;
-  color: #000;
+  background: var(--chat-user-bg);
+  color: var(--chat-user-text);
+  border-radius: 24px 24px 4px 24px;
 }
 
 .r-gap{
@@ -228,15 +269,6 @@ section {
   justify-content: center;
   align-items: flex-end;
   gap: 5px;
-}
-.nemory{
-  background: #7BF478;
-}
-.list{
-  background: #87B7FE;
-}
-.voice{
-  background: #F876EB;
 }
 .gpt-block{
   display: flex;
@@ -384,13 +416,13 @@ footer {
 }
 
 .footer-button {
-  color: white;
+  color: #808080FF;
   text-decoration: none;
 
 }
 
 .footer-button:hover {
-  color: blue;
+  color: white;
 }
 
 .support{

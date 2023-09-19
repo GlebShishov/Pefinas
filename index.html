@@ -5,7 +5,6 @@
   <title>Perfinace финансовый бот</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/adaptive.css">
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="apple-touch-icon" href="/icon.png">
@@ -14,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="canonical" href="%%%">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
   <meta name="description" content="Телеграм бот поможет понять куда уходят деньги.">
   <meta name="keywords" content="телеграм бот, бот, телеграм, финансы, telegram, bot, finance, gpt, gpt4, gpt3, gpt3.5, гпт3, гпт4, гпт 3.5, помощник">
@@ -36,6 +35,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Place favicon.ico in the root directory -->
   <meta name="theme-color" content="#fafafa">
+
+  <script src="Javascript/Typing.js"></script>
 </head>
 <body class="wrapper">
 <!--<header>-->
@@ -62,7 +63,7 @@
         </div>
         <div class="block-chat">
           <p class="chat-m chat-user">Куда ушли все мои деньги?</p>
-          <div class="r-gap">
+          <div class="r-gap chat-bot-answer">
             <img src="img/Avatar.svg" class="small-avatar small-avatar" alt="avatar" title="avatar">
             <p class="chat-m chat-bot">Вы больше всего потратили в этом месяце на рестораны и такси.
               Вот аналитика по. вашим расходам,
@@ -82,7 +83,7 @@
         </div>
         <div class="block-chat">
           <p class="chat-m chat-user">Сколько саня мне должен?</p>
-          <div class="r-gap">
+          <div class="r-gap chat-bot-answer">
             <img src="img/Avatar.svg" class="small-avatar" alt="avatar" title="avatar">
             <p class="chat-m chat-bot">Вы одолжили Саше 100 руб. Саша вам должен 1590 руб.Напишите ему и напомните о его
               долге</p>
@@ -96,7 +97,7 @@
         </div>
         <div class="block-chat">
           <p class="chat-m chat-user">Я купил стол за 30000руб</p>
-          <div class="r-gap">
+          <div class="r-gap chat-bot-answer">
             <img src="img/Avatar.svg" class="small-avatar" alt="avatar" title="avatar">
             <p class="chat-m chat-bot">Я записал , покупка стола за 30 000 руб, на рублевый счет сбербанк</p>
           </div>
@@ -109,8 +110,8 @@
           <p>Записывайте голосовые сообщения бот вас поймет</p>
         </div>
         <div class="block-chat">
-          <p class="chat-m chat-user">IiIiIIIiiIIiIiiIiiIiIiiiiii</p>
-          <div class="r-gap">
+          <img src="img/Voice.svg" class="chat-m chat-user">
+          <div class="r-gap chat-bot-answer">
             <img src="img/Avatar.svg" class="small-avatar" alt="avatar" title="avatar">
             <p class="chat-m chat-bot">Хорошо, я добавил новый счет в долларрах. На счету 100$ USD.</p>
           </div>
