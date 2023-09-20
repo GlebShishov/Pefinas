@@ -320,6 +320,11 @@ section {
   height: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  background-image: url(../img/gpt.jpeg);
+  background-size: 280%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }
 
 .section-gap {
