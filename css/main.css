@@ -183,7 +183,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 28px;
+  border-radius: 2rem;
   text-decoration: none;
 }
 .primary{
@@ -237,7 +237,7 @@ section {
 }
 
 .chat-m{
-  max-width: 250px;
+  max-width: 280px;
   display: flex;
   padding: var(--border-radius-12);
   align-items: flex-start;
@@ -281,6 +281,7 @@ section {
   justify-content: center;
   align-items: flex-end;
   gap: 5px;
+  height: 100%;
 }
 .gpt-block{
   display: flex;
@@ -486,4 +487,18 @@ header{
 .video-case{
   border-radius: var(--border-radius-24);
   border: 2px #e5e0e0 solid;
+  animation: in 500ms ease-out 0s normal forwards;
+  position: relative;
+}
+
+@keyframes in {
+  from {
+    transform: rotate(0deg);
+    /*left: 1000px;*/
+    scale: 0%;
+  }
+  to {
+    transform: rotate(0deg);
+    left: 0px;
+  }
 }
