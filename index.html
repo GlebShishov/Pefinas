@@ -13,10 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="canonical" href="%%%">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
   <meta name="description" content="Телеграм бот поможет понять куда уходят деньги.">
-  <meta name="keywords" content="телеграм бот, бот, телеграм, финансы, telegram, bot, finance, gpt, gpt4, gpt3, gpt3.5, гпт3, гпт4, гпт 3.5, помощник">
+  <meta name="keywords"
+        content="телеграм бот, бот, телеграм, финансы, telegram, bot, finance, gpt, gpt4, gpt3, gpt3.5, гпт3, гпт4, гпт 3.5, помощник">
   <meta name="robots" content="all,max-image-preview:large,max-video-preview:0,max-snippet:20">
   <meta name="google-site-verification" content="0furHXNWh_TbU2LuL5XikULgcSqrQ3o0UxubGDdf0Xg"/>
 
@@ -46,7 +48,7 @@
   <div class="hero-info">
     <span id="hero-headline">Pefinas - твой бот финасист</span>
     <P>Разберитесь с счетами и расходами в телеграмме</P>
-    <a href="" class="button primary">
+    <a href="" class="button primary" id="main-button">
       <img src="img/Icons/social/telegram.svg">Начать чат</a>
   </div>
   <video class="video-case" width="288" height="640" controls autoplay muted loop>
@@ -125,10 +127,12 @@
           <p>Просто напишите ваши процеты я посчитаю за вас</p>
         </div>
         <div class="block-chat">
-          <p class="chat-m chat-user">Сколько мне нужно заплатить налогов? Процент ИПН налога 10%, процент налога ОМС 2% сумма 10000 руб?</p>
+          <p class="chat-m chat-user">Сколько мне нужно заплатить налогов? Процент ИПН налога 10%, процент налога ОМС 2%
+            сумма 10000 руб?</p>
           <div class="r-gap chat-bot-answer">
             <img src="img/Avatar.svg" class="small-avatar small-avatar" alt="avatar" title="avatar">
-            <p class="chat-m chat-bot">Для расчета суммы налогов необходимо умножить сумму на каждый процент и сложить полученные значения:
+            <p class="chat-m chat-bot">Для расчета суммы налогов необходимо умножить сумму на каждый процент и сложить
+              полученные значения:
               <br>Налог_ИПН = Сумма * (Процент_ИПН / 100)</br>
               <br>Налог_ОМС = Сумма * (Процент_ОМС / 100)</br>
               <br>Таким образом, вам нужно заплатить 1200 рублей налогов.</br>
@@ -164,6 +168,31 @@
     </div>
     <img src="img/gpt.jpeg" class="gpt-img small-avatar" alt="gpt" title="gpt">
   </section>
+  <section class="road-map-section">
+      <h3>Дорожная карта проекта</h3>
+    <div class="road-map-container">
+      <div class="road-map-block">
+        <h4>1</h4>
+        <p>Считывание информации с чеков</p>
+      </div>
+      <div class="road-map-block">
+        <h4>2</h4>
+        <p>Выгрузка в csv (таблицы)</p>
+      </div>
+      <div class="road-map-block">
+        <h4>3</h4>
+        <p>Котировки криптовалюты</p>
+      </div>
+      <div class="road-map-block">
+        <h4>4</h4>
+        <p>Чат бот на сайте</p>
+      </div>
+      <div class="road-map-block">
+        <h4>5</h4>
+        <p>Чат бот API</p>
+      </div>
+    </div>
+  </section>
   <section id="faq" class="faq-block">
     <div class="top-gap half-size">
       <h3>FAQ</h3>
@@ -173,7 +202,17 @@
     <div class="faq-container half-size">
       <details>
         <summary>Почему платно?</summary>
-        <p>Каждый вопрос бота, отправляется в чат gpt4 и на наши серверы, анализируется выбирается лучшая по параметрам и после этого бот отвечает. Каждый запрос на площадку требует вычислительных мощностей и оплаты вышеуказанных сервисов.</p>
+        <p>Каждый вопрос бота, отправляется в чат gpt4 и на наши серверы, анализируется по параметрам
+          и после этого бот отвечает. Каждый запрос на площадку требует вычислительных мощностей и оплаты вышеуказанных
+          сервисов.</p>
+      </details>
+      <details>
+        <summary>Где хранятся мои транзакции?</summary>
+        <p>Сервис хранит только даные о транзакциях, он не знает кому пренадлежать деньги (как blockchain). Информация о каждом пользователе хранится отдельно, поэтому никто из вне не сможет получить вашу историю операций.</p>
+      </details>
+      <details>
+        <summary>Какие языке поддерживаются</summary>
+        <p>Все</p>
       </details>
     </div>
   </section>
