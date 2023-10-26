@@ -26,3 +26,9 @@
 
 }
 
+@media (max-width: 768px) {
+ .hero{
+   display: flex;
+   gap: 8vh;
+ }
+}
