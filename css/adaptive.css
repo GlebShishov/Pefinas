@@ -15,7 +15,7 @@
 }
 @media (min-width: 1024px) {
   .block-info{
-    max-width: 350px;
+    /*max-width: 350px;*/
   }
 
 }

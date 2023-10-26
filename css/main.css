@@ -21,7 +21,7 @@ p {
   font-weight: 400;
   line-height: 150%; /* 24px */
   letter-spacing: 0.24px;
-  padding-top: 0.5rem;
+  padding-top: 0.6rem;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  font-size: 39px;
+  font-size: clamp(2rem,4vw,3rem);
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 39px */
@@ -44,13 +44,13 @@ h3 {
 :root {
   /*colors*/
   --background: #f8f8f8;
-  --text: #272323;
+  --text: #26252a;
   --text-contrast: #fff;
   --chat-user-bg: #EFFEDD;
   --chat-user-text: #1E1E1E;
 
   --chat-bot-bg: #FFFFFF;
-  --chat-bot-text: #020202;
+  --chat-bot-text: #262424;
 
   --anal-bg: #D7E2FF;
   --memory-bg: #7BF478;
@@ -91,11 +91,11 @@ h3 {
 }
 
 #hero-headline {
-  background: linear-gradient(105deg, #FFF 39.65%, #00B3FF 107.21%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 46px;
+  /*background: linear-gradient(105deg, #FFF 39.65%, #00B3FF 107.21%);*/
+  /*background-clip: text;*/
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
+  font-size: clamp(3rem,4vw,4rem);
   font-style: normal;
   font-weight: 700;
   line-height: 99.5%; /* 45.77px */
@@ -128,7 +128,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px;
+  padding: 2.5rem 2rem 6rem 2rem;
   justify-content: space-between;
   min-height: 400px;
   border: 1px rgba(255, 255, 255, 0.2) solid;
@@ -214,8 +214,9 @@ section {
   gap: 24px var(--border-radius-24);
   flex-wrap: wrap;
   border-radius: 0 0 var(--border-radius-64) var(--border-radius-64);
-  background: #0D0221;
-  color: #FFF;
+  /*background: #0D0221;*/
+  background: #C6EAFF;
+  /*color: #FFF;*/
 }
 
 .hero-info {
@@ -228,9 +229,15 @@ section {
   gap: 25px;
   flex: 1 0 0;
   width: 100%;
+  color: #272323;
 
   align-items: center;
   text-align: center;
+}
+.hero-info-block{
+  flex-direction: column;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .block-container {
@@ -304,7 +311,7 @@ section {
 
 .gpt-block {
   display: flex;
-  padding: 24px;
+  padding: clamp(3rem,40vw,6rem) 1rem;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -575,3 +582,81 @@ header {
   flex-direction: column;
   padding: 4rem 1rem;
 }
+
+.hero-avatar{
+  width: 100px;
+  height: auto;
+  border-radius: 1rem;
+  border: white 1px solid;
+}
+
+
+.glow-on-hover {
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #5C58FF;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  font-size: 1.5rem;
+  width: fit-content;
+  display: flex;
+  padding: 2rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 2rem;
+  text-decoration: none;
+
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 2rem;
+}
+
+.glow-on-hover:active {
+  color: white;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5C58FF;
+  left: 0;
+  top: 0;
+  border-radius: 2rem;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
